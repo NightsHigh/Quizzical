@@ -111,10 +111,13 @@ button:focus {
 }
 
 /* MEDIA QUERIES*/
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    main{
+        overflow: hidden;
+    }
     .main-container, .question-sheet {
-        padding: 10px;
-        max-width: 90%;
+        padding: 5px;
+        max-width: 95%;
     }
 
     h1, p, h2 {
@@ -128,5 +131,11 @@ button:focus {
     .answer {
         margin: 5px 2px;
         padding: 8px;
+    }
+    
+    .question-sheet {
+        padding: 15px;
+        height: 100%;
+        overflow: auto;
     }
 }
