@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.main-container, .question-sheet {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+h1, p {
+    margin: 10px 0;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.li-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+
+/* ANSWERS */
+.answer {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.answer:hover {
+    background-color: #e0e0e0; 
+}
+
+.answer:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+
+.selected {
+    background-color: #c0c0ff;
+}
+
+.correct {
+    background-color: #c0ffc0; 
+}
+.wrong {
+    background-color: #ffc0c0; 
+}
+
+
+.line-break{
+    height: 2px;
+    background-color: black;
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 600px) {
+    .main-container, .question-sheet {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    h1, p, h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .answer {
+        margin: 5px 2px;
+        padding: 8px;
+    }
+}
